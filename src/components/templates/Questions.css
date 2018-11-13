@@ -1,5 +1,7 @@
 .ui.card, .ui.cards>.card {
     width: unset !important;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px !important;
 }
 
 #endingTimeMessage {
@@ -20,6 +22,8 @@
 
 #endingTimeMessage.show {
     visibility: visible;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px !important;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
@@ -85,6 +89,12 @@
     left: 25%;
     top: 5rem;
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .question-for-department {
+        display: none;
+    }
 }
 
 /* [type="radio"]:checked,
