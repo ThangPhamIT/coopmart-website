@@ -20,8 +20,9 @@ const SUBMIT_TEST = 'NỘP BÀI';
 const QUESTION = 'CÂU HỎI';
 const PLEASE_TRY_AGAIN = 'VUI LÒNG THỬ LẠI';
 
-const SALE = 'THU NGÂN'
-const SECURITY = 'BẢO VỆ'
+const SALE = 'THU NGÂN';
+const SECURITY = 'BẢO VỆ';
+const QUESTION_FOR_DEPARTMENT = 'BỘ CÂU HỎI DÀNH CHO BỘ PHẬN';
 
 export {
     WELCOME_TO_MINI_TEST,
@@ -42,5 +43,6 @@ export {
     PLEASE_SELECT_YOUR_DEPARTMENT,
     DEPARTMENT_CAN_NOT_BE_EMPTY,
     SALE,
-    SECURITY
+    SECURITY,
+    QUESTION_FOR_DEPARTMENT
 }

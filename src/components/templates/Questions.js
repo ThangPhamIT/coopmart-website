@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Form, Button, Card } from 'semantic-ui-react';
-import { BEFORE_TIME_UP, SUBMIT_TEST, QUESTION, TIME_UP, SALE, SECURITY } from '../utils/Constants';
+import { BEFORE_TIME_UP, SUBMIT_TEST, QUESTION, TIME_UP, SALE, SECURITY, QUESTION_FOR_DEPARTMENT } from '../utils/Constants';
 import Collection from '../utils/Collection';
 import './Questions.css';
 import Timer from '../timer/Timer';
@@ -90,7 +90,7 @@ class Questions extends React.Component {
     }
 
     render() {
-        const { username } = this.props;
+        const { username, department } = this.props;
         const { loading } = this.state;
         
         let question = QUESTIONS.map((item, index) => {
@@ -117,6 +117,8 @@ class Questions extends React.Component {
                     <span><Timer endingTime={this.onClick} notifyEndingTime={this.notifyEndingTime}/></span>
                 </div>
                 <div id="endingTimeMessage">{ BEFORE_TIME_UP }</div>
+                <center className='question-for-department'>{ QUESTION_FOR_DEPARTMENT } {department}</center>
+                <center className='department-title'>{department}</center>
                 <Card>
                     <Card.Content>
                         <Form loading={loading}>

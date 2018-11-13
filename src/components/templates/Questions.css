@@ -22,8 +22,6 @@
 
 #endingTimeMessage.show {
     visibility: visible;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 17px !important;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
@@ -91,9 +89,28 @@
     color: #fff;
 }
 
+.department-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px !important;
+    font-weight: 600;
+    position: fixed;
+    text-align: center;
+    left: 25%;
+    top: 5rem;
+    color: #fff;
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .question-for-department {
         display: none;
+    }
+    .department-title {
+        display: block;
+        position: fixed;
+        text-align: center;
+        left: 35%;
+        color: #EB0677;
     }
 }
 
