@@ -4,8 +4,8 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px !important;
 }
 
 #root {

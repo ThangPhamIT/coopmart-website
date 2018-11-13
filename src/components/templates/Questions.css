@@ -76,6 +76,17 @@
     line-height: 2rem !important;
 }
 
+.question-for-department {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px !important;
+    font-weight: 600;
+    position: fixed;
+    text-align: center;
+    left: 25%;
+    top: 5rem;
+    color: #fff;
+}
+
 /* [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
