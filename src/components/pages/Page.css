@@ -1,0 +1,54 @@
+/***************************************************** HOME PAGE *****************************************************/
+
+.homepage {
+    height: 100%;
+    background-image: url('../../images/background.jpg') no-repeat center center fixed !important;
+    /* background-color: red; */
+    background: image('../../images/background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.homepage-card-login {
+    margin-top: 10% !important;
+    width: 50% !important;
+    max-width: 50% !important;
+}
+
+.homepage-img-content-coop {
+    width: 245px !important;
+}
+
+.homepage-welcome, .dashboard-congratulations {
+    letter-spacing: 5px;
+    font-size: 18px;
+    color: #EB0677;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.homepage-welcome-sign-up, .homepage-welcome-login {
+    letter-spacing: 5px;
+    font-size: 18px;
+    color: #085FA9;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.homepage-welcome-sign-up:hover, .homepage-welcome-login:hover {
+    letter-spacing: 5px;
+    font-size: 18px;
+    color: #EB0677;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+/***************************************************** DASHBOARD PAGE *****************************************************/
+
+.dashboard-done-test-exam {
+    font-size: 18px;
+    color: #085FA9;
+    line-height: 3rem;
+}

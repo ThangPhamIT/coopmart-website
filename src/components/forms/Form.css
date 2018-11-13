@@ -1,0 +1,8 @@
+.sign-up-title-name, .login-title-name {
+    letter-spacing: 5px;
+    padding: 25px 0;
+}
+
+.sign-up-button, .login-button {
+    letter-spacing: 3px;
+}

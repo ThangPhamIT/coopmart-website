@@ -1,0 +1,62 @@
+.navbar {
+    min-height: 3.25rem;
+}
+
+.navbar-item {
+    display: block;
+    padding: .5rem .75rem;
+    position: relative;
+}
+
+.navbar-item > img {
+    width: 80px;
+    height: 75px;
+    max-height: 80px;
+    max-width: 75px;
+    margin-left: 45px;
+}
+
+.nav-background {
+    background-color: #085FA9 !important;
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    border-radius: 0 !important;
+}
+
+.justify-content {
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.navbar-brand, .navbar-tabs {
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    min-height: 5.25rem;
+}
+
+.header-title {
+    margin-top: -20px;
+}
+
+.header-co-op {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.header-mart {
+    color: #EB0677;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
