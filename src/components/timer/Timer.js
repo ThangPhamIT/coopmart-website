@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Timer.css';
 
 //let counter = 0;
-let timeLeft = 180;
+let timeLeft = 600;
 
 class Timer extends React.Component {
     constructor(props) {
@@ -30,7 +30,7 @@ class Timer extends React.Component {
             this.setState({counter: counter++});
             var currentTime = this.convertSecond(timeLeft - counter); 
             this.setState({time : currentTime});
-            if ((timeLeft - counter) === 120) {
+            if ((timeLeft - counter) === 180) {
                 this.notifyEndingTime(false);
             }
 

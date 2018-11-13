@@ -1,14 +1,15 @@
 import logo from '../../images/favicon.ico';
+import { SALE, SECURITY } from './Constants';
 
 const DEPARTMENTS = [
     {
-        text: 'IT',
-        value: 'IT',
+        text: SALE,
+        value: SALE,
         image: { avatar: true, src: logo },
     },
     {
-        text: 'SALES',
-        value: 'SALES',
+        text: SECURITY,
+        value: SECURITY,
         image: { avatar: true, src: logo },
     }
 ]

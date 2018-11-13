@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Form, Button, Card } from 'semantic-ui-react';
-import { BEFORE_TIME_UP, SUBMIT_TEST, QUESTION, TIME_UP } from '../utils/Constants';
+import { BEFORE_TIME_UP, SUBMIT_TEST, QUESTION, TIME_UP, SALE, SECURITY } from '../utils/Constants';
 import Collection from '../utils/Collection';
 import './Questions.css';
 import Timer from '../timer/Timer';
@@ -18,6 +18,24 @@ class Questions extends React.Component {
             answer_5: '',
             answer_6: '',
             answer_7: '',
+            answer_8: '',
+            answer_9: '',
+            answer_10: '',
+            answer_11: '',
+            answer_12: '',
+            answer_13: '',
+            answer_14: '',
+            answer_15: '',
+            answer_16: '',
+            answer_17: '',
+            answer_18: '',
+            answer_19: '',
+            answer_20: '',
+            answer_21: '',
+            answer_22: '',
+            answer_23: '',
+            answer_24: '',
+            answer_25: '',
         },
         loading: false,
         errors: {},
@@ -61,14 +79,13 @@ class Questions extends React.Component {
     };
 
     componentWillMount() {
-        console.log('department will: ', this.props.department);
         switch(this.props.department) {
-            case 'IT':
-                return QUESTIONS = Collection.IT_QUESTIONS;
-            case 'SALES':
+            case SECURITY:
+                return QUESTIONS = Collection.SECURITY_QUESTIONS;
+            case SALE:
                 return QUESTIONS = Collection.SALE_QUESTIONS;
             default:
-                return QUESTIONS = Collection.IT_QUESTIONS;
+                return QUESTIONS = Collection.SECURITY_QUESTIONS;
         }
     }
 
