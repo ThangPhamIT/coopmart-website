@@ -3,7 +3,6 @@
 .homepage {
     height: 100%;
     background-image: url('../../images/background.jpg') no-repeat center center fixed !important;
-    /* background-color: red; */
     background: image('../../images/background.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -15,6 +14,14 @@
     margin-top: 10% !important;
     width: 50% !important;
     max-width: 50% !important;
+}
+
+@media screen and (max-width: 768px) {
+    .homepage-card-login {
+        margin-top: 30% !important;
+        width: 80% !important;
+        max-width: 80% !important;
+    }
 }
 
 .homepage-img-content-coop {
@@ -40,7 +47,7 @@
 .homepage-welcome-sign-up:hover, .homepage-welcome-login:hover {
     letter-spacing: 5px;
     font-size: 18px;
-    color: #EB0677;
+    color: #eb0677;
     font-weight: bold;
     line-height: 3rem;
 }

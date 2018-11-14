@@ -12,7 +12,7 @@ class LoginPage extends React.Component {
     render() {
         return (
             <div>
-                <Header />>
+                <Header />
                 <LoginForm submit={this.submit}/>
             </div>
         );

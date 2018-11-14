@@ -49,6 +49,7 @@
 .question-content {
     height: 85vh;
     overflow: auto;
+    margin-top: 40px !important;
 }
 
 .hello-user-test {
@@ -85,8 +86,28 @@
     position: fixed;
     text-align: center;
     left: 35%;
-    top: 5rem;
-    color: #fff;
+    top: 8rem;
+    color: #000;
+    text-decoration: underline
+}
+
+.department-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px !important;
+    font-weight: 600;
+    position: fixed;
+    text-align: center;
+    left: 35%;
+    top: 8rem;
+    color: #000;
+    display: none;
+    text-decoration: underline
+}
+
+@media screen and (width: 1024px) {
+    .question-for-department {
+        left: 25%;
+    }
 }
 
 @media screen and (max-width: 890px) {
@@ -104,7 +125,14 @@
         position: fixed;
         text-align: center;
         left: 35%;
-        color: #EB0677;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .department-title {
+        text-align: center;
+        left: 22%;
     }
 }
 

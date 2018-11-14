@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Form, Button, Card } from 'semantic-ui-react';
-import { BEFORE_TIME_UP, SUBMIT_TEST, QUESTION, TIME_UP, SALE, SECURITY, QUESTION_FOR_DEPARTMENT } from '../utils/Constants';
+import { BEFORE_TIME_UP, SUBMIT_TEST, QUESTION, TIME_UP, SALE, SECURITY, QUESTION_FOR_DEPARTMENT, DEPARTMENT_TITLE } from '../utils/Constants';
 import Collection from '../utils/Collection';
 import './Questions.css';
 import Timer from '../timer/Timer';
@@ -118,7 +118,7 @@ class Questions extends React.Component {
                 </div>
                 <div id="endingTimeMessage">{ BEFORE_TIME_UP }</div>
                 <center className='question-for-department'>{ QUESTION_FOR_DEPARTMENT } {department}</center>
-                <center className='department-title'>{department}</center>
+                <center className='department-title'>{ DEPARTMENT_TITLE } {department}</center>
                 <Card>
                     <Card.Content>
                         <Form loading={loading}>

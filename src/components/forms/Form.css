@@ -5,4 +5,9 @@
 
 .sign-up-button, .login-button {
     letter-spacing: 3px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.ui.negative.message .header {
+    font-family: "Times New Roman", Times, serif;
 }
